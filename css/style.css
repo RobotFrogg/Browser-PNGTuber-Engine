@@ -13,16 +13,22 @@ canvas {
 }
 .container {
   display: flex;
-  width: 100%;
   justify-content: left;
   align-items: left;
+  overflow:hidden;
+}
+
+#db{
+	width:100%;
+	position:absolute;
+	opacity:30%;
 }
 .result-container {
   display: flex;
   width: 100%;
   justify-content: left;
   align-items: left;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 .result-container > div {
   font-size: 1.3rem;
@@ -52,3 +58,8 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
+
+#db{
+
+
+}

@@ -8,19 +8,20 @@
     <header>TheEnsphere's PNG-Tuber Engine v0.1</header>
     <div class="container">
       <video id="video" height="576" width="1024" autoplay muted></video>
+      <canvas id=db width=400 height=400 style="width:1024px;height:576px"></canvas>
     </div>
 
     
     <div class="result-container">
       <div id="expression">Expression State:</div>
-      
+      <div id="otherstate">Other State:</div>
       <!-- <div id="gender">Gender</div>
       <div id="age">Age</div> -->
     </div>
 
-
-    
+    <script src="./js/audiodbvis.js"></script>
     <script src="./js/face-api.min.js"></script>
     <script src="./js/facetracking.js"></script>
+
   </body>
 </html>

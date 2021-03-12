@@ -12,9 +12,11 @@ Promise.all([
 
 function startVideo() {
   navigator.getUserMedia(
-    { video: {} },
+    { video: {},
+    audio: true },
     stream => (video.srcObject = stream),
     err => console.error(err)
+    
   );
 }
 
@@ -51,8 +53,6 @@ video.addEventListener("playing", () => {
       const emotion = Object.keys(expressions).filter(
         item => expressions[item] === maxValue
       );
-      // document.getElementById("age").innerText = `Age - ${interpolatedAge}`;
-      // document.getElementById("gender").innerText = `Gender - ${gender}`;
       document.getElementById("expression").innerText = `Expression State: ${emotion[0]}`;
     }
   }, 10);
