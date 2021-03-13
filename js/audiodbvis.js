@@ -23,7 +23,7 @@ let height = canvas.height;
 let c2d = canvas.getContext("2d");
 c2d.fillStyle = "#fff";
 let speaking = false;
-let speakTimerBuffeer = 20;
+let speakTimerBuffeer = 5;
 let speakTimer = speakTimerBuffeer;
 let draw = () => {
   // 
