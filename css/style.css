@@ -48,6 +48,7 @@ canvas {
 }
 video {
   /* width: 100%; */
+  background:black;
 }
 header {
   background: #000000;
