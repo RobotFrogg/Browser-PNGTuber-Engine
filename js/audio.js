@@ -34,8 +34,9 @@ let draw = () => {
   // 
   let h = max * height;
   let y = height - h;
+  let volume = h.toFixed(1);;
   // c2d.fillRect(width - 1, y, 1, h);
-  document.getElementById("otherstate").innerText = `Speaking Volume: ${h}`;
+  document.getElementById("otherstate").innerText = `Speaking Volume: ${volume}`;
 // turn this into state machine later
   if (h>=35){
     speaking = true;
